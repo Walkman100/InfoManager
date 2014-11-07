@@ -40,6 +40,7 @@ Partial Class InfoManager
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.StatusStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.txtName = New System.Windows.Forms.TextBox()
+        Me.lnkHelp = New System.Windows.Forms.LinkLabel()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -111,6 +112,7 @@ Partial Class InfoManager
         'btnRun
         '
         Me.btnRun.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnRun.Enabled = False
         Me.btnRun.Location = New System.Drawing.Point(93, 271)
         Me.btnRun.Name = "btnRun"
         Me.btnRun.Size = New System.Drawing.Size(98, 23)
@@ -131,6 +133,7 @@ Partial Class InfoManager
         'btnSave
         '
         Me.btnSave.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnSave.Enabled = False
         Me.btnSave.Location = New System.Drawing.Point(12, 271)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(75, 23)
@@ -227,11 +230,26 @@ Partial Class InfoManager
         Me.txtName.Size = New System.Drawing.Size(134, 20)
         Me.txtName.TabIndex = 16
         '
+        'lnkHelp
+        '
+        Me.lnkHelp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lnkHelp.AutoSize = True
+        Me.lnkHelp.Enabled = False
+        Me.lnkHelp.Location = New System.Drawing.Point(195, 135)
+        Me.lnkHelp.Name = "lnkHelp"
+        Me.lnkHelp.Size = New System.Drawing.Size(93, 13)
+        Me.lnkHelp.TabIndex = 17
+        Me.lnkHelp.TabStop = True
+        Me.lnkHelp.Text = "Custom Keys Help"
+        '
         'InfoManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 319)
+        Me.Controls.Add(Me.btnEnd)
+        Me.Controls.Add(Me.btnRun)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.txtButton2)
@@ -239,16 +257,14 @@ Partial Class InfoManager
         Me.Controls.Add(Me.lblButton2)
         Me.Controls.Add(Me.lblData2)
         Me.Controls.Add(Me.txtData2)
-        Me.Controls.Add(Me.chkMultiLine)
-        Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.btnEnd)
-        Me.Controls.Add(Me.btnRun)
         Me.Controls.Add(Me.txtButton1)
         Me.Controls.Add(Me.cbxButton1)
         Me.Controls.Add(Me.lblButton1)
         Me.Controls.Add(Me.lblData1)
         Me.Controls.Add(Me.txtData1)
         Me.Controls.Add(Me.lstPrograms)
+        Me.Controls.Add(Me.lnkHelp)
+        Me.Controls.Add(Me.chkMultiLine)
         Me.Name = "InfoManager"
         Me.Text = "InfoManager"
         Me.StatusStrip.ResumeLayout(False)
@@ -275,5 +291,6 @@ Partial Class InfoManager
     Friend WithEvents StatusStrip As System.Windows.Forms.StatusStrip
     Friend WithEvents StatusStripStatusLabel As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents txtName As System.Windows.Forms.TextBox
+    Friend WithEvents lnkHelp As System.Windows.Forms.LinkLabel
 
 End Class
