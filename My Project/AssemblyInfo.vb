@@ -9,10 +9,10 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("InfoManager")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyDescription("A simple program for entering info into programs that don't honor the 'remember me' option as they should")> 
+<Assembly: AssemblyCompany("DeavmiOSS")> 
 <Assembly: AssemblyProduct("InfoManager")> 
-<Assembly: AssemblyCopyright("Copyright ©  2014")> 
+<Assembly: AssemblyCopyright("FOSS from Walkman 201")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
