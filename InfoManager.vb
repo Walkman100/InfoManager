@@ -6,7 +6,7 @@ Public Class InfoManager
 
     End Sub
 
-    Private Sub lstPrograms_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstPrograms.SelectedIndexChanged
+    Private Sub lstPrograms_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles lstPrograms.SelectedIndexChanged
         StatusStripStatusLabel.Text = "Loading item..."
         Select Case lstPrograms.SelectedIndex + 1
             Case 1 'Program1
@@ -145,7 +145,8 @@ Public Class InfoManager
         StatusStripStatusLabel.Text = "Saved!"
     End Sub
 
-    Private Sub btnRun_Click(sender As Object, e As EventArgs) Handles btnRun.Click
+    Private Sub btnRun_Click(sender As Object, e As EventArgs) Handles btnRun.Click, lstPrograms.DoubleClick
+        lstPrograms_SelectedIndexChanged()
         StatusStripStatusLabel.Text = "Running insert script..."
         Me.WindowState = FormWindowState.Minimized
         SendKeys.Send(txtData1.Text)
@@ -212,7 +213,7 @@ Public Class InfoManager
             txtData2.Enabled = True
             lblButton2.Enabled = True
             cbxButton2.Enabled = True
-            txtButton2.Enabled = True
+            cbxButton2_SelectedIndexChanged()
         Else
             lblData2.Enabled = False
             txtData2.Enabled = False
@@ -222,7 +223,7 @@ Public Class InfoManager
         End If
     End Sub
 
-    Private Sub cbxButton2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbxButton2.SelectedIndexChanged
+    Private Sub cbxButton2_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles cbxButton2.SelectedIndexChanged
         If cbxButton2.SelectedIndex = 5 Then
             txtButton2.Enabled = True
         Else
