@@ -120,4 +120,29 @@
   <metadata name="StatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAEwAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAABMAAAATAAAAEwAAABMAAAATAAA
+        AAAAAAAAAAAAAD09PZ8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAA
+        AP89PT2fAAAAAAAAAAAAAAD/19fX//7+/v/7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v/+/v7//39
+        /f/X19f/AAAA/wAAAAAAAAAAAAAA/+bm5v//////fHx8//////98fHz/fHx8/3x8fP98fHz/fHx8/3x8
+        fP//////5ubm/wAAAP8AAAAAAAAAAAAAAP/i4uL/////////////////////////////////////////
+        /////////////+Li4v8AAAD/AAAAAAAAAAAAAAD/4uLi//////98fHz//////3x8fP98fHz/fHx8/3x8
+        fP98fHz/fHx8///////i4uL/AAAA/wAAAAAAAAAAAAAA/+Li4v//////////////////////////////
+        ////////////////////////4uLi/wAAAP8AAAAAAAAAAAAAAP/i4uL//////3x8fP//////fHx8/3x8
+        fP98fHz/fHx8/3x8fP98fHz//////+Li4v8AAAD/AAAAAAAAAAAAAAD/4uLi////////////////////
+        ///////////////////////////////////i4uL/AAAA/wAAAAAAAAAAAAAA/+Li4v//////fHx8////
+        //98fHz/fHx8/3x8fP98fHz/fHx8/3x8fP//////4uLi/wAAAP8AAAAAAAAAAAAAAP/i4uL/////////
+        /////////////////////////////////////////////+Li4v8AAAD/AAAAAAAAAAAAAAD/4uLi////
+        //98fHz//////3x8fP98fHz/fHx8/3x8fP98fHz/fHx8///////i4uL/AAAA/wAAAAAAAAAAAAAA/+Tk
+        5P/+/v7/////////////////////////////////////////////////5OTk/wAAAP8AAAAAAAAAAAAA
+        AP/n5+f/ycnJ/5iYmP////////////////////////////////+Li4v/9PT0/+Xl5f8AAAD/AAAAAAAA
+        AAAZGRm7l5eX/1BQUP8AAAD/tbW1/7W1tf+1tbX/tbW1/7W1tf+2trb/AAAA/zk5OduUlJT/GRkZuwAA
+        AAAAAAAATExMDBYWFpEFBQXPEhIS/yEhIZEgICCRICAgkSAgIJEgICCRIyMjkQAAAOsJCQm5FBQUkUxM
+        TAwAAAAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIAB
+        AACAAQAAgAEAAA==
+</value>
+  </data>
 </root>

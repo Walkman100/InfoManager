@@ -22,6 +22,7 @@ Partial Class InfoManager
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InfoManager))
         Me.lstPrograms = New System.Windows.Forms.ListBox()
         Me.txtData1 = New System.Windows.Forms.TextBox()
         Me.lblData1 = New System.Windows.Forms.Label()
@@ -123,6 +124,7 @@ Partial Class InfoManager
         'btnEnd
         '
         Me.btnEnd.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnEnd.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnEnd.Location = New System.Drawing.Point(197, 271)
         Me.btnEnd.Name = "btnEnd"
         Me.btnEnd.Size = New System.Drawing.Size(75, 23)
@@ -244,8 +246,10 @@ Partial Class InfoManager
         '
         'InfoManager
         '
+        Me.AcceptButton = Me.btnSave
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnEnd
         Me.ClientSize = New System.Drawing.Size(284, 319)
         Me.Controls.Add(Me.btnEnd)
         Me.Controls.Add(Me.btnRun)
@@ -265,7 +269,9 @@ Partial Class InfoManager
         Me.Controls.Add(Me.lstPrograms)
         Me.Controls.Add(Me.lnkHelp)
         Me.Controls.Add(Me.chkMultiLine)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "InfoManager"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "InfoManager"
         Me.StatusStrip.ResumeLayout(False)
         Me.StatusStrip.PerformLayout()

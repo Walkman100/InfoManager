@@ -3,11 +3,12 @@
 Public Class InfoManager
 
     Private Sub InfoManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        cbxButton1.SelectedIndex = 0
+        cbxButton2.SelectedIndex = 0
     End Sub
 
     Private Sub lstPrograms_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles lstPrograms.SelectedIndexChanged
-        StatusStripStatusLabel.Text = "Loading item..."
+        StatusStripStatusLabel.Text = "Loading item... (If this doesn't change whithin a few seconds, item hasn't been loaded correctly)"
         Select Case lstPrograms.SelectedIndex + 1
             Case 1 'Program1
                 txtName.Text = My.Settings.Program1.Item(0)
@@ -120,7 +121,7 @@ Public Class InfoManager
                 btnSave.Enabled = False
                 btnRun.Enabled = False
         End Select
-        StatusStripStatusLabel.Text = "Item loaded!"
+        StatusStripStatusLabel.Text = "Item succesfully loaded!"
     End Sub
 
     Sub EnableGUI()
