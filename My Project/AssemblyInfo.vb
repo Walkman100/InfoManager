@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("InfoManager")> 
-<Assembly: AssemblyDescription("A simple program for entering info into programs that don't honor the 'remember me' option as they should")> 
+<Assembly: AssemblyTitle("Info Manager")> 
+<Assembly: AssemblyDescription("A simple program for entering info into programs that don't honour the 'remember me' option as they should")> 
 <Assembly: AssemblyCompany("DeavmiOSS")> 
 <Assembly: AssemblyProduct("InfoManager")> 
-<Assembly: AssemblyCopyright("FOSS from Walkman 201")> 
+<Assembly: AssemblyCopyright("FOSS from Walkman 2014")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
