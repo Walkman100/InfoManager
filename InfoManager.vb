@@ -8,7 +8,7 @@ Public Class InfoManager
     End Sub
 
     Private Sub lstPrograms_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles lstPrograms.SelectedIndexChanged
-        StatusStripStatusLabel.Text = "Loading item... (If this doesn't change whithin a few seconds, item hasn't been loaded correctly)"
+        StatusStripStatusLabel.Text = "Loading item " & lstPrograms.SelectedIndex + 1 & "... (If this doesn't change within a few seconds, item hasn't been loaded correctly)"
         Select Case lstPrograms.SelectedIndex + 1
             Case 1 'Program1
                 txtName.Text = My.Settings.Program1.Item(0)
@@ -138,12 +138,76 @@ Public Class InfoManager
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
-        CType(lstPrograms.SelectedItem, System.Collections.Specialized.StringCollection).Item(0) = txtName.Text
-        CType(lstPrograms.SelectedItem, System.Collections.Specialized.StringCollection).Item(1) = txtData1.Text
-        CType(lstPrograms.SelectedItem, System.Collections.Specialized.StringCollection).Item(2) = cbxButton1.SelectedItem
-        CType(lstPrograms.SelectedItem, System.Collections.Specialized.StringCollection).Item(3) = txtButton1.Text
-        CType(lstPrograms.SelectedItem, System.Collections.Specialized.StringCollection).Item(4) = chkMultiLine.Checked
-        StatusStripStatusLabel.Text = "Saved!"
+        StatusStripStatusLabel.Text = "Saving item " & lstPrograms.SelectedIndex + 1 & "... (If this doesn't change within a few seconds, item hasn't been saved correctly)"
+        Select Case lstPrograms.SelectedIndex + 1
+            Case 1 'Program1
+                My.Settings.Program1.Item(0) = txtName.Text
+                My.Settings.Program1.Item(1) = txtData1.Text
+                My.Settings.Program1.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program1.Item(3) = txtButton1.Text
+                My.Settings.Program1.Item(4) = chkMultiLine.Checked
+            Case 2 'Program2
+                My.Settings.Program2.Item(0) = txtName.Text
+                My.Settings.Program2.Item(1) = txtData1.Text
+                My.Settings.Program2.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program2.Item(3) = txtButton1.Text
+                My.Settings.Program2.Item(4) = chkMultiLine.Checked
+            Case 3 'Program3
+                My.Settings.Program3.Item(0) = txtName.Text
+                My.Settings.Program3.Item(1) = txtData1.Text
+                My.Settings.Program3.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program3.Item(3) = txtButton1.Text
+                My.Settings.Program3.Item(4) = chkMultiLine.Checked
+            Case 4 'Program4
+                My.Settings.Program4.Item(0) = txtName.Text
+                My.Settings.Program4.Item(1) = txtData1.Text
+                My.Settings.Program4.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program4.Item(3) = txtButton1.Text
+                My.Settings.Program4.Item(4) = chkMultiLine.Checked
+            Case 5 'Program5
+                My.Settings.Program5.Item(0) = txtName.Text
+                My.Settings.Program5.Item(1) = txtData1.Text
+                My.Settings.Program5.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program5.Item(3) = txtButton1.Text
+                My.Settings.Program5.Item(4) = chkMultiLine.Checked
+            Case 6 'Program6
+                My.Settings.Program6.Item(0) = txtName.Text
+                My.Settings.Program6.Item(1) = txtData1.Text
+                My.Settings.Program6.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program6.Item(3) = txtButton1.Text
+                My.Settings.Program6.Item(4) = chkMultiLine.Checked
+            Case 7 'Program7
+                My.Settings.Program7.Item(0) = txtName.Text
+                My.Settings.Program7.Item(1) = txtData1.Text
+                My.Settings.Program7.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program7.Item(3) = txtButton1.Text
+                My.Settings.Program7.Item(4) = chkMultiLine.Checked
+            Case 8 'Program8
+                My.Settings.Program8.Item(0) = txtName.Text
+                My.Settings.Program8.Item(1) = txtData1.Text
+                My.Settings.Program8.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program8.Item(3) = txtButton1.Text
+                My.Settings.Program8.Item(4) = chkMultiLine.Checked
+            Case 9 'Program9
+                My.Settings.Program9.Item(0) = txtName.Text
+                My.Settings.Program9.Item(1) = txtData1.Text
+                My.Settings.Program9.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program9.Item(3) = txtButton1.Text
+                My.Settings.Program9.Item(4) = chkMultiLine.Checked
+            Case 10 'Program0 (Extendable)
+                My.Settings.Program0.Item(0) = txtName.Text
+                My.Settings.Program0.Item(1) = txtData1.Text
+                My.Settings.Program0.Item(2) = cbxButton1.SelectedItem
+                My.Settings.Program0.Item(3) = txtButton1.Text
+                My.Settings.Program0.Item(4) = chkMultiLine.Checked
+        End Select
+        ' Old Code: (Doesn't work)
+        ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, System.Collections.Specialized.StringCollection).Item(0) = txtName.Text
+        ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, System.Collections.Specialized.StringCollection).Item(1) = txtData1.Text
+        ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, System.Collections.Specialized.StringCollection).Item(2) = cbxButton1.SelectedItem
+        ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, System.Collections.Specialized.StringCollection).Item(3) = txtButton1.Text
+        ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, My.Settings).Item(4) = chkMultiLine.Checked
+        StatusStripStatusLabel.Text = "Item succesfully Saved!"
     End Sub
 
     Private Sub btnRun_Click(sender As Object, e As EventArgs) Handles btnRun.Click, lstPrograms.DoubleClick
