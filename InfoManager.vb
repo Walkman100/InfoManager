@@ -5,6 +5,7 @@ Public Class InfoManager
     Private Sub InfoManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cbxButton1.SelectedIndex = 0
         cbxButton2.SelectedIndex = 0
+        SetListNames
     End Sub
 
     Private Sub lstPrograms_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles lstPrograms.SelectedIndexChanged
@@ -148,6 +149,18 @@ Public Class InfoManager
         btnSave.Enabled = True
         btnRun.Enabled = True
     End Sub
+    
+    Sub SetListNames
+        lstPrograms.Items.Item(0) = My.Settings.Program1.Item(0)
+        lstPrograms.Items.Item(1) = My.Settings.Program2.Item(0)
+        lstPrograms.Items.Item(2) = My.Settings.Program3.Item(0)
+        lstPrograms.Items.Item(3) = My.Settings.Program4.Item(0)
+        lstPrograms.Items.Item(4) = My.Settings.Program5.Item(0)
+        lstPrograms.Items.Item(5) = My.Settings.Program6.Item(0)
+        lstPrograms.Items.Item(6) = My.Settings.Program7.Item(0)
+        lstPrograms.Items.Item(7) = My.Settings.Program8.Item(0)
+        lstPrograms.Items.Item(8) = My.Settings.Program9.Item(0)
+    End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         StatusStripStatusLabel.Text = "Saving item " & lstPrograms.SelectedIndex + 1 & "... (If this doesn't change within a few seconds, item hasn't been saved correctly)"
@@ -219,7 +232,8 @@ Public Class InfoManager
         ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, System.Collections.Specialized.StringCollection).Item(2) = cbxButton1.SelectedItem
         ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, System.Collections.Specialized.StringCollection).Item(3) = txtButton1.Text
         ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, My.Settings).Item(4) = chkMultiLine.Checked
-        StatusStripStatusLabel.Text = "Item succesfully Saved!"
+        SetListNames
+        StatusStripStatusLabel.Text = "Item succesfully saved!"
     End Sub
 
     Private Sub btnRun_Click(sender As Object, e As EventArgs) Handles btnRun.Click, lstPrograms.DoubleClick
