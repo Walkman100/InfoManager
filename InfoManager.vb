@@ -9,6 +9,7 @@ Public Class InfoManager
 
     Private Sub lstPrograms_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles lstPrograms.SelectedIndexChanged
         StatusStripStatusLabel.Text = "Loading item " & lstPrograms.SelectedIndex + 1 & "... (If this doesn't change within a few seconds, item hasn't been loaded correctly)"
+        ResetGUI()
         Select Case lstPrograms.SelectedIndex + 1
             Case 1 'Program1
                 txtName.Text = My.Settings.Program1.Item(0)
@@ -122,6 +123,17 @@ Public Class InfoManager
                 btnRun.Enabled = False
         End Select
         StatusStripStatusLabel.Text = "Item succesfully loaded!"
+    End Sub
+    
+    Sub ResetGUI()
+        txtName.Text = ""
+        txtData1.Text = ""
+        cbxButton1.SelectedIndex = 0
+        txtButton1.Text = "{}"
+        chkMultiLine.Checked = False
+        txtData2.Text = ""
+        cbxButton2.SelectedIndex = 0
+        txtButton2.Text = "{}"
     End Sub
 
     Sub EnableGUI()
