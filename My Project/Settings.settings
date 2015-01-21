@@ -1,104 +1,104 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<SettingsFile CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true" xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings">
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles>
     <Profile Name="(Default)" />
   </Profiles>
   <Settings>
-    <Setting Name="Program0" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program1" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Support for more than 9 entries not added yet!&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Program1&lt;/string&gt;
+                            &lt;string&gt;info e.g. email&lt;/string&gt;
+                            &lt;string&gt;Enter&lt;/string&gt;
+                            &lt;string&gt;n.a.&lt;/string&gt;
+                            &lt;string&gt;False&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
-    <Setting Name="Program1" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program2" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Program1&lt;/string&gt;
-  &lt;string&gt;info e.g. email&lt;/string&gt;
-  &lt;string&gt;Enter&lt;/string&gt;
-  &lt;string&gt;n.a.&lt;/string&gt;
-  &lt;string&gt;False&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Program2&lt;/string&gt;
+                            &lt;string&gt;&lt;/string&gt;
+                            &lt;string&gt;Enter&lt;/string&gt;
+                            &lt;string&gt;n.a.&lt;/string&gt;
+                            &lt;string&gt;False&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
-    <Setting Name="Program2" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program3" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Program2&lt;/string&gt;
-  &lt;string&gt;info&lt;/string&gt;
-  &lt;string&gt;Enter&lt;/string&gt;
-  &lt;string&gt;n.a.&lt;/string&gt;
-  &lt;string&gt;False&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Program3&lt;/string&gt;
+                            &lt;string&gt;&lt;/string&gt;
+                            &lt;string&gt;Enter&lt;/string&gt;
+                            &lt;string&gt;n.a.&lt;/string&gt;
+                            &lt;string&gt;False&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
-    <Setting Name="Program3" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program4" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Program3&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;Enter&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;False&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Program4&lt;/string&gt;
+                            &lt;string&gt;&lt;/string&gt;
+                            &lt;string&gt;Enter&lt;/string&gt;
+                            &lt;string&gt;n.a.&lt;/string&gt;
+                            &lt;string&gt;False&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
-    <Setting Name="Program4" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program5" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Program4&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;Enter&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;False&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Program5&lt;/string&gt;
+                            &lt;string&gt;&lt;/string&gt;
+                            &lt;string&gt;Enter&lt;/string&gt;
+                            &lt;string&gt;n.a.&lt;/string&gt;
+                            &lt;string&gt;False&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
-    <Setting Name="Program5" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program6" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Program5&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;Enter&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;False&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Program6&lt;/string&gt;
+                            &lt;string&gt;&lt;/string&gt;
+                            &lt;string&gt;Enter&lt;/string&gt;
+                            &lt;string&gt;n.a.&lt;/string&gt;
+                            &lt;string&gt;False&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
-    <Setting Name="Program6" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program7" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Program6&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;Enter&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;False&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Program7&lt;/string&gt;
+                            &lt;string&gt;&lt;/string&gt;
+                            &lt;string&gt;Enter&lt;/string&gt;
+                            &lt;string&gt;n.a.&lt;/string&gt;
+                            &lt;string&gt;False&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
-    <Setting Name="Program7" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program8" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Program7&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;Enter&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;False&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Program8&lt;/string&gt;
+                            &lt;string&gt;&lt;/string&gt;
+                            &lt;string&gt;Enter&lt;/string&gt;
+                            &lt;string&gt;n.a.&lt;/string&gt;
+                            &lt;string&gt;False&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
-    <Setting Name="Program8" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program9" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Program8&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;Enter&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;False&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Program9&lt;/string&gt;
+                            &lt;string&gt;&lt;/string&gt;
+                            &lt;string&gt;Enter&lt;/string&gt;
+                            &lt;string&gt;n.a.&lt;/string&gt;
+                            &lt;string&gt;False&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
-    <Setting Name="Program9" Type="System.Collections.Specialized.StringCollection" Scope="User" Roaming="false">
+    <Setting Name="Program0" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Program9&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;Enter&lt;/string&gt;
-  &lt;string /&gt;
-  &lt;string&gt;False&lt;/string&gt;
-&lt;/ArrayOfString&gt;</Value>
+                        &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+                            &lt;string&gt;Support for more than 9 entries not added yet!&lt;/string&gt;
+                        &lt;/ArrayOfString&gt;</value>
     </Setting>
   </Settings>
 </SettingsFile>
