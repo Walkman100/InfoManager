@@ -3,7 +3,7 @@
 ; As a program that all Power PC users should have, Notepad++ is recommended to edit this file
 
 AddBrandingImage top 20
-Icon "Resources\16x16_log.ico"
+Icon "My Project\16x16_log.ico"
 Caption "InfoManager Installer"
 Name "InfoManager"
 AutoCloseWindow true
@@ -61,7 +61,7 @@ Function .onInit
   MessageBox MB_YESNO "This will install InfoManager. Do you wish to continue?" IDYES gogogo
     Abort
   gogogo:
-  SetBrandingImage "[/RESIZETOFIT] Resources\16x16_log.ico"
+  SetBrandingImage "[/RESIZETOFIT] 'My Project\16x16_log.ico'"
   SetShellVarContext all
   SetAutoClose true
 FunctionEnd
