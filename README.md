@@ -2,6 +2,10 @@
 
 A simple program for entering info into programs that don't honour the "remember me'" option as they should.
 
+## Compile requirements
+
+See [CompileInstructions.md](https://github.com/Walkman100/WinCompile/blob/master/CompileInstructions.md)
+
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Walkman100/infomanager/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
