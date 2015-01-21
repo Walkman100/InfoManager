@@ -237,7 +237,6 @@ Public Class InfoManager
     End Sub
 
     Private Sub btnRun_Click(sender As Object, e As EventArgs) Handles btnRun.Click, lstPrograms.DoubleClick
-        lstPrograms_SelectedIndexChanged()
         StatusStripStatusLabel.Text = "Running insert script..."
         Me.WindowState = FormWindowState.Minimized
         SendKeys.Send(txtData1.Text)
