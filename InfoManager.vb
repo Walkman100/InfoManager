@@ -123,7 +123,7 @@ Public Class InfoManager
                 btnSave.Enabled = False
                 btnRun.Enabled = False
         End Select
-        StatusStripStatusLabel.Text = "Item succesfully loaded!"
+        StatusStripStatusLabel.Text = "Item " & lstPrograms.SelectedIndex + 1 & " succesfully loaded!"
     End Sub
     
     Sub ResetGUI()
@@ -233,7 +233,7 @@ Public Class InfoManager
         ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, System.Collections.Specialized.StringCollection).Item(3) = txtButton1.Text
         ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, My.Settings).Item(4) = chkMultiLine.Checked
         SetListNames
-        StatusStripStatusLabel.Text = "Item succesfully saved!"
+        StatusStripStatusLabel.Text = "Item " & lstPrograms.SelectedIndex + 1 & " succesfully saved!"
     End Sub
 
     Private Sub btnRun_Click(sender As Object, e As EventArgs) Handles btnRun.Click, lstPrograms.DoubleClick
