@@ -1,11 +1,38 @@
 ﻿Imports Microsoft.VisualBasic
 
 Public Class InfoManager
-
+    
+    Dim ExitWhenDone As Boolean = False
+    
     Private Sub InfoManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cbxButton1.SelectedIndex = 0
         cbxButton2.SelectedIndex = 0
         SetListNames
+        
+        For Each s As String In My.Application.CommandLineArgs
+            If s.ToLower = "exitwhendone" Then
+                ExitWhenDone = True
+            ElseIf s.StartsWith("run") Then
+                Try
+                    lstPrograms.SelectedIndex = (s.Remove(0,4) -1)
+                    Run
+                Catch
+                    If Not s.Length > 4 Then
+                        MsgBox("Parameter too short! Please use the syntax 'run:1'.", MsgBoxStyle.Exclamation)
+                    Else
+                        Try
+                            MsgBox("""" & s.Remove(0,4) & """ is not a valid integer or doesn't exist in the list!", MsgBoxStyle.Exclamation)
+                        Catch ex As Exception
+                            MsgBox("""" & s.ToString & """ can't be evaluated! Please use the syntax 'InfoManager.exe run:1'." _
+                                   & vbNewLine & vbNewLine & "The error was:" & vbNewLine & ex.Message, MsgBoxStyle.Exclamation)
+                        End Try
+                    End If
+                End Try
+            Else
+                MsgBox("Unknown parameter '" & s & "'. Available parameters are:" & vbNewLine & vbNewLine & _
+                       "ExitWhenDone" & vbNewLine & "run:[script number]", MsgBoxStyle.Exclamation)
+            End If
+        Next
     End Sub
 
     Private Sub lstPrograms_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles lstPrograms.SelectedIndexChanged
@@ -162,7 +189,7 @@ Public Class InfoManager
         lstPrograms.Items.Item(8) = My.Settings.Program9.Item(0)
     End Sub
 
-    Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+    Private Sub Save() Handles btnSave.Click
         StatusStripStatusLabel.Text = "Saving item " & lstPrograms.SelectedIndex + 1 & "... (If this doesn't change within a few seconds, item hasn't been saved correctly)"
         Select Case lstPrograms.SelectedIndex + 1
             Case 1 'Program1
@@ -236,8 +263,8 @@ Public Class InfoManager
         StatusStripStatusLabel.Text = "Item " & lstPrograms.SelectedIndex + 1 & " succesfully saved!"
     End Sub
 
-    Private Sub btnRun_Click(sender As Object, e As EventArgs) Handles btnRun.Click, lstPrograms.DoubleClick
-        StatusStripStatusLabel.Text = "Running insert script..."
+    Private Sub Run() Handles btnRun.Click, lstPrograms.DoubleClick
+        StatusStripStatusLabel.Text = "Running insert script " & lstPrograms.SelectedIndex + 1 & "..."
         Me.WindowState = FormWindowState.Minimized
         SendKeys.Send(txtData1.Text)
         Select Case cbxButton1.SelectedIndex
@@ -272,10 +299,11 @@ Public Class InfoManager
             End Select
         End If
         Me.WindowState = FormWindowState.Normal
-        StatusStripStatusLabel.Text = "Insert script completed!"
+        StatusStripStatusLabel.Text = "Insert script " & lstPrograms.SelectedIndex + 1 & " completed!"
+        If ExitWhenDone Then CloseInfoManager
     End Sub
 
-    Private Sub btnEnd_Click(sender As Object, e As EventArgs) Handles btnEnd.Click
+    Private Sub CloseInfoManager() Handles btnEnd.Click
         Application.Exit()
     End Sub
 
