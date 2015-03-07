@@ -1,6 +1,7 @@
 # InfoManager [![Build status](https://ci.appveyor.com/api/projects/status/1r0lau52v3c1ai7y)](https://ci.appveyor.com/project/Walkman100/infomanager)
-
 A simple program for entering info into programs that don't honour the "remember me'" option as they should.
+
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Walkman100/Walkman?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Screenshot
 [![InfoManager Screenshot](http://walkman100.github.io/Walkman/Images/WindowsProjectsScreenshots/InfoManager/MainWindow.png)](http://walkman100.github.io/Walkman/Images/WindowsProjectsScreenshots/InfoManager/MainWindow.png)
