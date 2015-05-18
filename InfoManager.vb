@@ -14,14 +14,14 @@ Public Class InfoManager
                 ExitWhenDone = True
             ElseIf s.StartsWith("run") Then
                 Try
-                    lstPrograms.SelectedIndex = (s.Remove(0,4) -1)
+                    lstPrograms.SelectedIndex = (s.Substring(4) -1)
                     Run
                 Catch
                     If Not s.Length > 4 Then
                         MsgBox("Parameter too short! Please use the syntax 'run:1'.", MsgBoxStyle.Exclamation)
                     Else
                         Try
-                            MsgBox("""" & s.Remove(0,4) & """ is not a valid integer or doesn't exist in the list!", MsgBoxStyle.Exclamation)
+                            MsgBox("""" & s.Substring(4) & """ is not a valid integer or doesn't exist in the list!", MsgBoxStyle.Exclamation)
                         Catch ex As Exception
                             MsgBox("""" & s.ToString & """ can't be evaluated! Please use the syntax 'InfoManager.exe run:1'." _
                                    & vbNewLine & vbNewLine & "The error was:" & vbNewLine & ex.Message, MsgBoxStyle.Exclamation)
