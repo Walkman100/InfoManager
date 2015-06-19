@@ -150,7 +150,7 @@ Public Class InfoManager
                 btnSave.Enabled = False
                 btnRun.Enabled = False
         End Select
-        StatusStripStatusLabel.Text = "Item " & lstPrograms.SelectedIndex + 1 & " succesfully loaded!"
+        StatusStripStatusLabel.Text = "Item " & lstPrograms.SelectedIndex + 1 & " successfully loaded!"
     End Sub
     
     Sub ResetGUI()
@@ -260,7 +260,7 @@ Public Class InfoManager
         ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, System.Collections.Specialized.StringCollection).Item(3) = txtButton1.Text
         ' CTypeDynamic("My.Settings." & lstPrograms.SelectedItem.ToString, My.Settings).Item(4) = chkMultiLine.Checked
         SetListNames
-        StatusStripStatusLabel.Text = "Item " & lstPrograms.SelectedIndex + 1 & " succesfully saved!"
+        StatusStripStatusLabel.Text = "Item " & lstPrograms.SelectedIndex + 1 & " successfully saved!"
     End Sub
 
     Private Sub Run() Handles btnRun.Click, lstPrograms.DoubleClick
@@ -319,9 +319,9 @@ Public Class InfoManager
 
     Private Sub lnkHelp_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnkHelp.LinkClicked
         Try
-            Process.Start("http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send(v=vs.110).aspx#remarksToggle")
+            Process.Start("http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send(v=vs.110).aspx?cs-lang=vb#remarksToggle")
         Catch ex As Exception
-            If MsgBox("Unable to launch URL, copy to clipboard instead?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then Clipboard.SetText("http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send(v=vs.110).aspx#remarksToggle")
+            If MsgBox("Unable to launch URL, copy to clipboard instead?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then Clipboard.SetText("http://msdn.microsoft.com/en-us/library/system.windows.forms.sendkeys.send(v=vs.110).aspx?cs-lang=vb#remarksToggle")
         End Try
     End Sub
 
