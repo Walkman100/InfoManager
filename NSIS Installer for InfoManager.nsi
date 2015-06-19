@@ -2,7 +2,6 @@
 ; get NSIS at http://nsis.sourceforge.net/Download
 ; As a program that all Power PC users should have, Notepad++ is recommended to edit this file
 
-AddBrandingImage top 20
 Icon "My Project\16x16_log.ico"
 Caption "InfoManager Installer"
 Name "InfoManager"
@@ -61,7 +60,6 @@ Function .onInit
   MessageBox MB_YESNO "This will install InfoManager. Do you wish to continue?" IDYES gogogo
     Abort
   gogogo:
-  SetBrandingImage "[/RESIZETOFIT] 'My Project\16x16_log.ico'"
   SetShellVarContext all
   SetAutoClose true
 FunctionEnd
