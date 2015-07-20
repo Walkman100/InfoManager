@@ -4,7 +4,8 @@ A simple program for entering info into programs that don't honour the "remember
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Walkman100/Walkman?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Screenshot
-[![InfoManager Screenshot](http://walkman100.github.io/Walkman/Images/WindowsProjectsScreenshots/InfoManager/MainWindow.png)](http://walkman100.github.io/Walkman/Images/WindowsProjectsScreenshots/InfoManager/MainWindow.png)
+[![InfoManager Screenshot][Screenshot]][Screenshot]
+  [Screenshot]: http://walkman100.github.io/images/Screenshots/My_Projects/InfoManager/MainWindow.png
 
 ## Data Storage
 The data file that stores the entries is managed by Windows, so if you move or rename the executable the entry data is reset - unless you move the user config file to the same folder as the exe ([contact me for help](http://walkman100.github.io/Walkman/HTML/Contact.html)). They are also stored in a different folder for each version, which you will have to manually copy to keep the entry data.
