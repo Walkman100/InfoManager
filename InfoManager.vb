@@ -1,10 +1,8 @@
-﻿Imports Microsoft.VisualBasic
-
-Public Class InfoManager
+﻿Public Class InfoManager
     
     Dim ExitWhenDone As Boolean = False
     
-    Private Sub InfoManager_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub InfoManager_Load() Handles MyBase.Load
         cbxButton1.SelectedIndex = 0
         cbxButton2.SelectedIndex = 0
         SetListNames
@@ -35,7 +33,7 @@ Public Class InfoManager
         Next
     End Sub
 
-    Private Sub lstPrograms_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles lstPrograms.SelectedIndexChanged
+    Private Sub lstPrograms_SelectedIndexChanged() Handles lstPrograms.SelectedIndexChanged
         StatusStripStatusLabel.Text = "Loading item " & lstPrograms.SelectedIndex + 1 & "... (If this doesn't change within a few seconds, item hasn't been loaded correctly)"
         ResetGUI()
         Select Case lstPrograms.SelectedIndex + 1
@@ -307,7 +305,7 @@ Public Class InfoManager
         Application.Exit()
     End Sub
 
-    Private Sub cbxButton1_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles cbxButton1.SelectedIndexChanged
+    Private Sub cbxButton1_SelectedIndexChanged() Handles cbxButton1.SelectedIndexChanged
         If cbxButton1.SelectedIndex = 5 Then
             txtButton1.Enabled = True
             lnkHelp.Enabled = True
@@ -325,7 +323,7 @@ Public Class InfoManager
         End Try
     End Sub
 
-    Private Sub chkMultiLine_CheckedChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles chkMultiLine.CheckedChanged
+    Private Sub chkMultiLine_CheckedChanged() Handles chkMultiLine.CheckedChanged
         If chkMultiLine.Checked = True Then
             lblData2.Enabled = True
             txtData2.Enabled = True
@@ -341,7 +339,7 @@ Public Class InfoManager
         End If
     End Sub
 
-    Private Sub cbxButton2_SelectedIndexChanged(Optional sender As Object = Nothing, Optional e As EventArgs = Nothing) Handles cbxButton2.SelectedIndexChanged
+    Private Sub cbxButton2_SelectedIndexChanged() Handles cbxButton2.SelectedIndexChanged
         If cbxButton2.SelectedIndex = 5 Then
             txtButton2.Enabled = True
         Else
