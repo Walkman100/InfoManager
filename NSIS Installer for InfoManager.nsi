@@ -13,7 +13,7 @@ LicenseData "LICENSE.md"
 LicenseForceSelection checkbox "I have read and understand this notice"
 LicenseText "Please read the notice below before installing InfoManager. If you understand the notice, click the checkbox below and click Next."
 
-InstallDir $PROGRAMFILES\DeavmiOSS
+InstallDir $PROGRAMFILES\WalkmanOSS
 
 OutFile "bin\Release\InfoManager-Installer.exe"
 
@@ -35,10 +35,20 @@ Section "InfoManager Executable & Uninstaller"
   WriteUninstaller "InfoManager-Uninst.exe"
 SectionEnd
 
+Section "Remove old files in DeavmiOSS"
+  Delete "$PROGRAMFILES\DeavmiOSS\InfoManager-Uninst.exe"
+  Delete "$PROGRAMFILES\DeavmiOSS\InfoManager.exe"
+  RMDir "$PROGRAMFILES\DeavmiOSS"
+  
+  Delete "$SMPROGRAMS\DeavmiOSS\InfoManager.lnk"
+  Delete "$SMPROGRAMS\DeavmiOSS\Uninstall InfoManager.lnk"
+  RMDir "$SMPROGRAMS\DeavmiOSS"
+SectionEnd
+
 Section "InfoManager Start Menu Shortcuts"
-  CreateDirectory "$SMPROGRAMS\DeavmiOSS"
-  CreateShortCut "$SMPROGRAMS\DeavmiOSS\InfoManager.lnk" "$INSTDIR\InfoManager.exe" "" "$INSTDIR\InfoManager.exe" "" "" "" "Info Manager"
-  CreateShortCut "$SMPROGRAMS\DeavmiOSS\Uninstall InfoManager.lnk" "$INSTDIR\InfoManager-Uninst.exe" "" "" "" "" "" "Uninstall Info Manager"
+  CreateDirectory "$SMPROGRAMS\WalkmanOSS"
+  CreateShortCut "$SMPROGRAMS\WalkmanOSS\InfoManager.lnk" "$INSTDIR\InfoManager.exe" "" "$INSTDIR\InfoManager.exe" "" "" "" "Info Manager"
+  CreateShortCut "$SMPROGRAMS\WalkmanOSS\Uninstall InfoManager.lnk" "$INSTDIR\InfoManager-Uninst.exe" "" "" "" "" "" "Uninstall Info Manager"
   ;Syntax for CreateShortCut: link.lnk target.file [parameters [icon.file [icon_index_number [start_options [keyboard_shortcut [description]]]]]]
 SectionEnd
 
@@ -49,10 +59,6 @@ SectionEnd
 Section "InfoManager Quick Launch Shortcut"
   CreateShortCut "$QUICKLAUNCH\InfoManager.lnk" "$INSTDIR\InfoManager.exe" "" "$INSTDIR\InfoManager.exe" "" "" "" "Info Manager"
 SectionEnd
-
-;Section "More apps from DeavmiOSS"
-; this should have sub options for available apps, that are downloaded
-;SectionEnd
 
 ; Functions
 
@@ -75,14 +81,23 @@ FunctionEnd
 Section "Uninstall"
   Delete "$INSTDIR\InfoManager-Uninst.exe"   ; Remove Application Files
   Delete "$INSTDIR\InfoManager.exe"
-  RMDir $INSTDIR
+  RMDir "$INSTDIR"
   
-  Delete "$SMPROGRAMS\DeavmiOSS\InfoManager.lnk"   ; Remove Start Menu Shortcuts & Folder
-  Delete "$SMPROGRAMS\DeavmiOSS\Uninstall InfoManager.lnk"
-  RMDir $SMPROGRAMS\DeavmiOSS
+  Delete "$SMPROGRAMS\WalkmanOSS\InfoManager.lnk"   ; Remove Start Menu Shortcuts & Folder
+  Delete "$SMPROGRAMS\WalkmanOSS\Uninstall InfoManager.lnk"
+  RMDir "$SMPROGRAMS\WalkmanOSS"
   
   Delete "$DESKTOP\InfoManager.lnk"   ; Remove Desktop Shortcut
   Delete "$QUICKLAUNCH\InfoManager.lnk"   ; Remove Quick Launch shortcut
+  
+  ; Remove old files in DeavmiOSS
+  Delete "$PROGRAMFILES\DeavmiOSS\InfoManager-Uninst.exe"
+  Delete "$PROGRAMFILES\DeavmiOSS\InfoManager.exe"
+  RMDir "$PROGRAMFILES\DeavmiOSS"
+  
+  Delete "$SMPROGRAMS\DeavmiOSS\InfoManager.lnk"
+  Delete "$SMPROGRAMS\DeavmiOSS\Uninstall InfoManager.lnk"
+  RMDir "$SMPROGRAMS\DeavmiOSS"
 SectionEnd
 
 ; Uninstaller Functions
