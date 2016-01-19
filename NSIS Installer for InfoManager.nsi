@@ -5,6 +5,7 @@
 Icon "My Project\16x16_log.ico"
 Caption "InfoManager Installer"
 Name "InfoManager"
+XPStyle on
 AutoCloseWindow true
 ShowInstDetails show
 
