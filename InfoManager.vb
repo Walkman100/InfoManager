@@ -1,4 +1,4 @@
-﻿Public Class InfoManager
+Public Class InfoManager
     
     Dim ExitWhenDone As Boolean = False
     
