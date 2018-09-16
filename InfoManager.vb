@@ -5,6 +5,7 @@ Public Class InfoManager
     Private Sub InfoManager_Load() Handles MyBase.Load
         cbxButton1.SelectedIndex = 0
         cbxButton2.SelectedIndex = 0
+        lblVersion.Text = My.Application.Info.Version.Major & "." & My.Application.Info.Version.Minor & "." & My.Application.Info.Version.Build
         SetListNames
         
         For Each s As String In My.Application.CommandLineArgs

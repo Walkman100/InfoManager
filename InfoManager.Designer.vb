@@ -42,6 +42,7 @@ Partial Class InfoManager
         Me.StatusStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.lnkHelp = New System.Windows.Forms.LinkLabel()
+        Me.lblVersion = New System.Windows.Forms.Label()
         Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -244,6 +245,17 @@ Partial Class InfoManager
         Me.lnkHelp.TabStop = True
         Me.lnkHelp.Text = "Custom Keys Help"
         '
+        'lblVersion
+        '
+        Me.lblVersion.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lblVersion.AutoSize = True
+        Me.lblVersion.Font = New System.Drawing.Font("Microsoft Sans Serif", 6!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblVersion.Location = New System.Drawing.Point(250, 310)
+        Me.lblVersion.Name = "lblVersion"
+        Me.lblVersion.Size = New System.Drawing.Size(21, 9)
+        Me.lblVersion.TabIndex = 18
+        Me.lblVersion.Text = "1.0.0"
+        '
         'InfoManager
         '
         Me.AcceptButton = Me.btnSave
@@ -251,6 +263,7 @@ Partial Class InfoManager
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnEnd
         Me.ClientSize = New System.Drawing.Size(284, 319)
+        Me.Controls.Add(Me.lblVersion)
         Me.Controls.Add(Me.btnEnd)
         Me.Controls.Add(Me.btnRun)
         Me.Controls.Add(Me.btnSave)
@@ -279,6 +292,7 @@ Partial Class InfoManager
         Me.PerformLayout()
 
     End Sub
+    Private lblVersion As System.Windows.Forms.Label
     Friend WithEvents lstPrograms As System.Windows.Forms.ListBox
     Friend WithEvents txtData1 As System.Windows.Forms.TextBox
     Friend WithEvents lblData1 As System.Windows.Forms.Label
