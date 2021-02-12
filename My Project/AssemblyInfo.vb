@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("A simple program for entering info into programs that don't honour the 'remember me' option as they should")> 
 <Assembly: AssemblyCompany("WalkmanOSS")> 
 <Assembly: AssemblyProduct("InfoManager")> 
-<Assembly: AssemblyCopyright("FOSS from Walkman 2014-15")> 
+<Assembly: AssemblyCopyright("FOSS from Walkman 2014-21")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
